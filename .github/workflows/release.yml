@@ -1,7 +1,12 @@
 name: Publish WordPress ZIP
+
 on:
   push:
     tags: ['v*']
+    branches: [main]
+    paths:
+      - '.github/workflows/release.yml'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -11,14 +16,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate source
+      - name: Validate source and tests
         run: |
           php -l glitchepoch.php
           node --check assets/js/glitchepoch.js
           php tests/smoke.php
-      - name: Build installable ZIP
+          node --test tests/counter.test.cjs
+          python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Build installable WordPress ZIP
         run: python3 scripts/package_plugin.py --output dist/glitchepoch.zip
-      - name: Publish GitHub release
+      - name: Create first release or tagged release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "${GITHUB_REF_NAME}" dist/glitchepoch.zip --generate-notes --verify-tag
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "${GITHUB_REF_TYPE}" == "tag" ]]; then
+            VERSION="${GITHUB_REF_NAME}"
+          else
+            VERSION="v1.0.0"
+          fi
+          if gh release view "$VERSION" > /dev/null 2>&1; then
+            echo "Release $VERSION already exists; no changes made."
+            exit 0
+          fi
+          gh release create "$VERSION" dist/glitchepoch.zip \
+            --target "$GITHUB_SHA" \
+            --title "GlitchEpoch ${VERSION#v}" \
+            --notes "First public release of GlitchEpoch, an elegant and dependency-free elapsed-time counter for WordPress. Download glitchepoch.zip and upload it through WordPress Plugins → Add New → Upload Plugin. Built and tested from source. Licensed GPL-2.0-or-later. Created by Luca Amore — https://www.lucaamore.com/"
