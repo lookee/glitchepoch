@@ -9,11 +9,11 @@
 ## ✨ Try the interactive demo
 
 [![Open Live Demo](https://img.shields.io/badge/▶_LAUNCH-LIVE_DEMO-2563EB?style=for-the-badge)](https://lookee.github.io/glitchepoch/)
-[![Download WordPress Plugin](https://img.shields.io/badge/⬇_DOWNLOAD-WORDPRESS_ZIP-21759B?style=for-the-badge&logo=wordpress&logoColor=white)](https://github.com/lookee/glitchepoch/raw/refs/heads/main/downloads/glitchepoch.zip)
+[![Download WordPress Plugin](https://img.shields.io/badge/⬇_DOWNLOAD-WORDPRESS_ZIP-21759B?style=for-the-badge&logo=wordpress&logoColor=white)](https://github.com/lookee/glitchepoch/releases/download/v1.0.0/glitchepoch.zip)
 
 [![GlitchEpoch live demo preview](docs/demo-preview.svg)](https://lookee.github.io/glitchepoch/)
 
-**[OPEN THE LIVE DEMO →](https://lookee.github.io/glitchepoch/)** · **[DOWNLOAD THE INSTALLABLE WORDPRESS PLUGIN (.zip)](https://github.com/lookee/glitchepoch/raw/refs/heads/main/downloads/glitchepoch.zip)**
+**[OPEN THE LIVE DEMO →](https://lookee.github.io/glitchepoch/)** · **[DOWNLOAD THE INSTALLABLE WORDPRESS PLUGIN (.zip)](https://github.com/lookee/glitchepoch/releases/download/v1.0.0/glitchepoch.zip)**
 
 > The live demo measures time elapsed since the repository's **first Git commit**, using its actual timestamp. If GitHub Pages isn't enabled yet, the project owner can enable it in **Settings → Pages → GitHub Actions**.
 
@@ -32,7 +32,7 @@ A time counter should be simple, precise, and beautiful. GlitchEpoch keeps the i
 
 ## Quick start
 
-1. Download the [ready-to-install `glitchepoch.zip`](https://github.com/lookee/glitchepoch/raw/refs/heads/main/downloads/glitchepoch.zip), or get it from a [GitHub Release](https://github.com/lookee/glitchepoch/releases) when available.
+1. Download the installable [GlitchEpoch v1.0.0 WordPress ZIP](https://github.com/lookee/glitchepoch/releases/download/v1.0.0/glitchepoch.zip) from the [official release](https://github.com/lookee/glitchepoch/releases/tag/v1.0.0).
 2. In WordPress choose **Plugins → Add New → Upload Plugin**, upload the ZIP and activate it.
 3. Open **Settings → GlitchEpoch** to view the usage guide.
 4. Add a Shortcode block in an article or page:
