@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="350" viewBox="0 0 1000 350" role="img" aria-labelledby="title desc">
+<title id="title">GlitchEpoch counter preview</title>
+<desc id="desc">An elegant white time counter with four values labeled Days, Hours, Minutes and Seconds, and a blue seconds accent. Click to open the live demo.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#f5f8ff"/></linearGradient><filter id="shadow" x="-20%" y="-30%" width="140%" height="170%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#1a2840" flood-opacity=".09"/></filter></defs>
+<rect width="1000" height="350" rx="20" fill="#ffffff"/>
+<text x="48" y="61" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#333b4a">GLITCHEPOCH</text>
+<text x="952" y="61" font-family="Arial,sans-serif" font-size="14" text-anchor="end" fill="#738095">LIVE DEMO ↗</text>
+<g filter="url(#shadow)"><rect x="46" y="99" width="908" height="190" rx="25" fill="url(#bg)" stroke="#e8ebf1"/></g>
+<g font-family="Arial,Helvetica,sans-serif" text-anchor="middle">
+<text x="207" y="205" font-size="65" font-weight="600" letter-spacing="-2" fill="#1d2229">12,345</text>
+<text x="414" y="205" font-size="65" font-weight="600" fill="#1d2229">08</text>
+<text x="619" y="205" font-size="65" font-weight="600" fill="#1d2229">24</text>
+<text x="826" y="205" font-size="65" font-weight="600" fill="#2563eb">42</text>
+<g font-size="13" letter-spacing="2" fill="#8792a2" font-weight="600">
+<text x="207" y="246">DAYS</text><text x="414" y="246">HOURS</text><text x="619" y="246">MINUTES</text><text x="826" y="246">SECONDS</text>
+</g></g>
+<g stroke="#e4e9f0"><path d="M315 136v111M517 136v111M721 136v111"/></g>
+<text x="500" y="328" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#8b96a5">Illustrative preview · open the live demo for the real elapsed time</text>
+</svg>

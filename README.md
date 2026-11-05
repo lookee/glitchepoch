@@ -6,7 +6,17 @@
 [![WordPress 6.2+](https://img.shields.io/badge/WordPress-6.2%2B-21759B?logo=wordpress&logoColor=white)](https://wordpress.org/)
 [![License: GPL-2.0-or-later](https://img.shields.io/badge/license-GPL--2.0--or--later-blue.svg)](LICENSE)
 
-**Live demo:** [lookee.github.io/glitchepoch](https://lookee.github.io/glitchepoch/) *(enable GitHub Actions in Settings → Pages).*  
+## ✨ Try the interactive demo
+
+[![Open Live Demo](https://img.shields.io/badge/▶_LAUNCH-LIVE_DEMO-2563EB?style=for-the-badge)](https://lookee.github.io/glitchepoch/)
+[![Download WordPress Plugin](https://img.shields.io/badge/⬇_DOWNLOAD-WORDPRESS_ZIP-21759B?style=for-the-badge&logo=wordpress&logoColor=white)](https://github.com/lookee/glitchepoch/raw/refs/heads/main/downloads/glitchepoch.zip)
+
+[![GlitchEpoch live demo preview](docs/demo-preview.svg)](https://lookee.github.io/glitchepoch/)
+
+**[OPEN THE LIVE DEMO →](https://lookee.github.io/glitchepoch/)** · **[DOWNLOAD THE INSTALLABLE WORDPRESS PLUGIN (.zip)](https://github.com/lookee/glitchepoch/raw/refs/heads/main/downloads/glitchepoch.zip)**
+
+> The live demo measures time elapsed since the repository's **first Git commit**, using its actual timestamp. If GitHub Pages isn't enabled yet, the project owner can enable it in **Settings → Pages → GitHub Actions**.
+
 **Created by:** [Luca Amore](https://www.lucaamore.com/) · **Website:** [lucaamore.com](https://www.lucaamore.com/) · **GitHub:** [@lookee](https://github.com/lookee)
 
 ## Why GlitchEpoch?
@@ -22,7 +32,7 @@ A time counter should be simple, precise, and beautiful. GlitchEpoch keeps the i
 
 ## Quick start
 
-1. Download the installable `glitchepoch.zip` from a [GitHub Release](https://github.com/lookee/glitchepoch/releases) or build it from source.
+1. Download the [ready-to-install `glitchepoch.zip`](https://github.com/lookee/glitchepoch/raw/refs/heads/main/downloads/glitchepoch.zip), or get it from a [GitHub Release](https://github.com/lookee/glitchepoch/releases) when available.
 2. In WordPress choose **Plugins → Add New → Upload Plugin**, upload the ZIP and activate it.
 3. Open **Settings → GlitchEpoch** to view the usage guide.
 4. Add a Shortcode block in an article or page:
@@ -47,7 +57,7 @@ To customize the blue accent:
 
 Invalid dates and nonexistent local times during daylight-saving transitions are rejected. For a date in the future, the counter shows zero until that instant arrives.
 
-## Live demo: time since the first commit
+## How the live demo works
 
 The [demo](https://lookee.github.io/glitchepoch/) starts counting from **the actual timestamp of this repository's first Git commit**. GitHub Actions checks out the complete Git history, reads the oldest root commit and generates the `first-commit.json` data file at deployment time. No timestamp is hard-coded.
 
