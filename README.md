@@ -13,12 +13,6 @@
 
 [![GlitchEpoch live demo preview](docs/demo-preview.svg)](https://lookee.github.io/glitchepoch/)
 
-**[OPEN THE LIVE DEMO →](https://lookee.github.io/glitchepoch/)** · **[DOWNLOAD THE INSTALLABLE WORDPRESS PLUGIN (.zip)](https://github.com/lookee/glitchepoch/releases/download/v1.0.0/glitchepoch.zip)**
-
-> The live demo measures time elapsed since the repository's **first Git commit**, using its actual timestamp. If GitHub Pages isn't enabled yet, the project owner can enable it in **Settings → Pages → GitHub Actions**.
-
-**Created by:** [Luca Amore](https://www.lucaamore.com/) · **Website:** [lucaamore.com](https://www.lucaamore.com/) · **GitHub:** [@lookee](https://github.com/lookee)
-
 ## Why GlitchEpoch?
 
 A time counter should be simple, precise, and beautiful. GlitchEpoch keeps the interface deliberately quiet: four large numbers, clear labels, a subtle white card, and an optional accent color. No account, no setup wizard, no tracking, and no external dependencies.
