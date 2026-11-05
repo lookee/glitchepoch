@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="GlitchEpoch: an elegant elapsed-time counter for WordPress. Open source, accurate, and dependency-free.">
+  <title>GlitchEpoch — Time, rendered beautifully</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="assets/glitchepoch.css">
+  <script defer src="assets/glitchepoch.js"></script>
+  <script defer src="demo.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="header">
+      <a class="brand" href="./" aria-label="GlitchEpoch home"><span class="brand-mark" aria-hidden="true">⌁</span><span>glitch<span class="brand-light">epoch</span></span></a>
+      <nav aria-label="Main navigation"><a href="https://github.com/lookee/glitchepoch" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></nav>
+    </header>
+    <main>
+      <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span>OPEN SOURCE · WORDPRESS PLUGIN · GPL-2.0-OR-LATER</span></div>
+      <h1>Time, rendered <em>beautifully.</em></h1>
+      <p class="lede">A clean, precise counter for the moments that matter. No frameworks. No tracking. Just time.</p>
+
+      <section aria-labelledby="counter-heading" class="showcase">
+        <div class="demo-meta"><span id="counter-heading">LIVE PREVIEW</span><span class="code-tag">GET /first-commit</span></div>
+        <div id="demo-counter" class="glitchepoch" role="timer" aria-live="off" aria-label="Elapsed time since the initial Git commit" style="--ge-accent:#2563eb">
+          <div class="glitchepoch__grid">
+            <div class="glitchepoch__unit"><span class="glitchepoch__number" data-unit="days">—</span><span class="glitchepoch__label">Days</span></div>
+            <div class="glitchepoch__unit"><span class="glitchepoch__number" data-unit="hours">—</span><span class="glitchepoch__label">Hours</span></div>
+            <div class="glitchepoch__unit"><span class="glitchepoch__number" data-unit="minutes">—</span><span class="glitchepoch__label">Minutes</span></div>
+            <div class="glitchepoch__unit"><span class="glitchepoch__number" data-unit="seconds">—</span><span class="glitchepoch__label">Seconds</span></div>
+          </div>
+        </div>
+        <div class="origin"><span class="origin-symbol" aria-hidden="true">◉</span><span id="origin-note">Loading initial commit timestamp…</span></div>
+      </section>
+
+      <section class="usage" aria-labelledby="usage-title">
+        <div><span class="small-label">01 / INSTALL</span><h2 id="usage-title">Drop it into WordPress.</h2><p>Install the ZIP, activate the plugin, and paste the shortcode into a post, page, or Shortcode block.</p></div>
+        <div class="snippet"><div class="snippet-head"><span>SHORTCODE</span><button id="copy-code" type="button" aria-label="Copy the shortcode">Copy</button></div><pre><code id="shortcode">[glitchepoch start="2010-12-05 02:00:00" timezone="Europe/Rome"]</code></pre></div>
+      </section>
+      <div class="features" aria-label="Features">
+        <div><span class="feature-icon" aria-hidden="true">⌘</span><strong>Zero dependencies</strong><span>Native PHP, CSS &amp; JavaScript.</span></div>
+        <div><span class="feature-icon" aria-hidden="true">◷</span><strong>Accurate by design</strong><span>Absolute timestamps, no timer drift.</span></div>
+        <div><span class="feature-icon" aria-hidden="true">◌</span><strong>Privacy first</strong><span>No cookies, trackers, or API calls.</span></div>
+      </div>
+    </main>
+    <footer><span>© 2026 <a href="https://www.lucaamore.com/" rel="author noopener">Luca Amore</a> · GlitchEpoch</span><span><a href="https://www.lucaamore.com/">lucaamore.com</a> · <a href="https://github.com/lookee">GitHub @lookee</a> · <a href="https://github.com/lookee/glitchepoch/blob/main/LICENSE">GPL-2.0-or-later</a></span></footer>
+  </div>
+</body>
+</html>
