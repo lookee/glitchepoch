@@ -3,6 +3,7 @@
 **Time, rendered beautifully.** An elegant, lightweight, open-source elapsed-time counter for WordPress.
 
 [![CI](https://github.com/lookee/glitchepoch/actions/workflows/ci.yml/badge.svg)](https://github.com/lookee/glitchepoch/actions/workflows/ci.yml)
+[![WordPress 6.2+](https://img.shields.io/badge/WordPress-6.2%2B-21759B?logo=wordpress&logoColor=white)](https://wordpress.org/)
 [![License: GPL-2.0-or-later](https://img.shields.io/badge/license-GPL--2.0--or--later-blue.svg)](LICENSE)
 
 **Live demo:** [lookee.github.io/glitchepoch](https://lookee.github.io/glitchepoch/) *(enable GitHub Actions in Settings → Pages).*  
